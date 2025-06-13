@@ -5,10 +5,10 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-#st.secrets["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+#os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
-llm = LLM(model="openai/gpt-4o")
+llm = LLM(model="openai/gpt-4o", api_key = OPENAI_API_KEY)
 
 ## function to create blog research agents with YouTube tool and the blog writer agent
 
