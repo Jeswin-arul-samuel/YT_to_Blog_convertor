@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-st.secrets["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+#st.secrets["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 llm = LLM(model="openai/gpt-4o")
 
