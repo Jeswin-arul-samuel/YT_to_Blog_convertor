@@ -3,3 +3,4 @@ crewai-tools
 streamlit
 youtube-transcript-api
 yt_dlp==2023.11.14
+sqlite3 >= 3.35.0
